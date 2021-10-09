@@ -1,0 +1,30 @@
+header {
+               
+    background-color:lightskyblue
+}
+
+    header #logo {
+    
+    background-color:khaki;
+    
+}
+    
+header nav {
+   
+    color:black;
+    background-color:darkorange;
+    font-size: 20px;
+    
+}
+
+section h1,h2,h3,h4,h5{
+    color:darkblue;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bolder;
+}
+footer {
+    background-color:yellow;
+    text-align: left;
+    font-weight: bold;
+}
