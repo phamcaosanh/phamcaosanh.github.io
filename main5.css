@@ -1,46 +1,40 @@
-header {
-               
-    background-color:lightskyblue
+header { 
+  background-color:lightgoldenrodyellow;
 }
-
-    header #logo {
-    
-    background-color:khaki;
-    
+header #logo { 
+  background-color:darkred;
 }
-header ul{
-            
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
+header img {
+  border-radius:50%; 
+ -moz-border-radius:50%; 
+ -webkit-border-radius:50%;
 }
-
-header li{
-    
-    float: left ; 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 150px;
-    padding-right: 50px;
+header ul{ 
+  list-style-type: none; 
+  padding: 0; 
+  overflow: hidden;
+} 
+header li{ 
+  float: left ; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  padding-left: 150px; 
+  padding-right: 50px;
 }
-header nav ul a {
-
-            
-    font-family:'Times New Roman', Times, serif;
-    font-weight: lighter ;
-    color: black;
-    text-decoration: none;
+header nav ul a { 
+  font-family:'Times New Roman', Times, serif; 
+  font-weight: lighter ; 
+  color: white; 
+  text-decoration: none;
+} 
+header nav { 
+  color:black; 
+  background-color:darkslateblue; 
+  font-size: 20px; 
 }
-    
-header nav {
-   
-    color:black;
-    background-color:darkorange;
-    font-size: 20px;
-    
+nav a:hover,a:active{ 
+  background-color:darkorange;
 }
-nav a:hover,a:active{
-    background-color:darkblue;}
 
 section table{
         width: 80%;}
