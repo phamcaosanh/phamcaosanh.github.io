@@ -66,8 +66,8 @@ width: 300px;
 .container-2 .icon{
   position: absolute;
   top: 50%;
-  margin-left: 17px;
-  margin-top: 17px;
+  margin-left: 50px;
+  margin-top: 50px;
   z-index: 1;
   color: #4f5b66;
 }
