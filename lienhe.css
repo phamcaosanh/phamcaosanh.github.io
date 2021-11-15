@@ -72,7 +72,14 @@ footer {
 .main-nav ul {
     grid-template-columns: 1fr;
   }
+.info { grid-template-columns: 1fr; }
+.info .btn {
+    display: block; 
+    text-align: center; 
+    margin: auto; 
+    }
 }
+
 
 .link {
   display: grid;
