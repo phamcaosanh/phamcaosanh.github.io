@@ -32,7 +32,7 @@ body {
   grid-gap: 20px;
   padding: 0;
   list-style: none;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .main-nav a {
   background: var(--primary);
@@ -42,8 +42,10 @@ body {
   text-align: center;
   color: var(--dark);
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   box-shadow: var(--shadow);
+  font-weight: bold;
+  font-family: Tomorrow, sans-serif;
 }
 
 .main-nav a:hover {
