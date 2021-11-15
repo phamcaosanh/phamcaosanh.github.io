@@ -82,7 +82,7 @@ footer {
 
 
 .link {
-  display: grid;
+  display: block;
   grid-gap: 20px;
   padding: 0rem;
   list-style: none;
