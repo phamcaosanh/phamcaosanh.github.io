@@ -179,10 +179,11 @@ h1  {
 /* Footer */
 footer {
   margin-top: 2rem;
-  background: var(--dark);
-  color: var(--light);
+  color: white;
   text-align: center;
   padding: 0rem;
+  font-weight: bold;
+  font-family: Tomorrow, sans-serif;
 }
 
 /* Media Queries */
