@@ -285,6 +285,7 @@ h1 a{
 .noidung p {
   font-family: Times New Roman, Times, serif;
   font-size: 15px;
+  text-align: justify;
 }
 
 h4 {
