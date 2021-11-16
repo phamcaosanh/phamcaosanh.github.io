@@ -248,3 +248,10 @@ footer {
 h2 {
   text-align: center;
 }
+
+.p2022 {
+  border: solid;
+  border-radius: 6px;
+  border-width: 3px;
+  width: 100%;
+}
