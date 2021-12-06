@@ -9,11 +9,39 @@
     <link href="phim5.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+     <header class="logo">
+            <div id="menu">
+                <img src="https://avatars.githubusercontent.com/u/72543595?v=4"/>
+            </div>
+   </header>
    <div class="wrapper">
       <!-- Navigation -->
       <nav class="main-nav">
         <ul>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/Cinema.html">Trang Chủ</a></li>
+          <li><a href="#">THỂ LOẠI</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li>
+                                <a href="#">PHIM 2021</a>   
+                            </li>
+                            <li>
+                                <a href="#">PHIM 2022</a>
+                            </li>
+                            <li>
+                                <a href="#">HÀNH ĐỘNGĐỘNG</a>   
+                            </li>
+                            <li>
+                                <a href="#">KINH DỊ</a>
+                            </li><li>
+                                <a href="#">VIỂN TƯỞNGTƯỞNG</a>   
+                            </li>
+                            <li>
+                                <a href="#">HÀI HƯỚC</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/baoloi.html">Báo Lỗi</a></li>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/lienhe.html">Liên Hệ</a></li>
         </ul>
@@ -45,10 +73,59 @@ style="width:230px;height:310px;">
           <h3>Nội Dung</h3>
          <p>Black Adam là một bộ phim siêu anh hùng sắp ra mắt của Mỹ dựa trên nhân vật cùng tên của DC Comics. Được sản xuất bởi New Line Cinema, DC Films, Seven Bucks Productions và FlynnPictureCo., Và được Warner Bros. Pictures phân phối, bộ phim dự định sẽ là một phần phụ của Shazam! và phim thứ 11 trong Vũ trụ mở rộng DC.</p>
         </div>
+        <div id="giua">
+        <div class="mySlides ">
+          <img src="https://www.indiewire.com/wp-content/uploads/2021/10/Screen-Shot-2021-10-16-at-1.15.31-PM.png?w=780" style="width: 800px; height: 450px;">
+        </div>
+        <div class="mySlides ">
+          <img src="https://variety.com/wp-content/uploads/2021/10/black-adam.jpg" style="width: 800px; height: 450px;">
+           </div>
+        <div class="mySlides ">
+          <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2021/10/Black-Adam---s-DC-FanDome-Trailer-Is-the-First-Scene-Dwayne-Johnson-Shot.jpg" style="width: 800px; height: 450px;">
+          </div>
+          </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>  
+      <script>
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 5000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
       </section>
-     <section class="video">
-       <h4>Trailer</h4>
-      <div class="youtube">
+       <div class="youtube">
        <iframe width="640" height="360" src="https://www.youtube.com/embed/pO46aNNcVnc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
      </section>
