@@ -73,6 +73,57 @@ style="width:230px;height:310px;">
           <h3>Nội Dung</h3>
          <p>Arcane (còn được biết đến là Arcane: Liên minh huyền thoại) là loạt phim hoạt hình trực tuyến Pháp-Mỹ ra mắt năm 2021. Được miêu tả là một chuỗi sự kiện, phim lấy bối cảnh của vũ trụ Liên minh huyền thoại. Loạt phim được công bố lần đầu tại lễ kỷ niệm lần thứ 10 của trò chơi nổi tiếng Liên minh huyền thoại. <br>Phim được sản xuất bởi Riot Games kết hợp cùng Fortiche, một hãng phim của Pháp tại Paris chuyên về các dịch vụ hoạt hình. Mốc thời gian của phim được chọn là quá khứ, kể lại về câu chuyện gốc của nhiều nhân vật từ hai thành phố Piltover hiện tại, phồn thịnh cùng với Zaun u tối, ô nhiễm. Giống như bản trò chơi điện tử, Arcane cũng được hướng đến đối tượng khản giả "16+" và có đề cập đến các yếu tố mang tính người lớn.</p>
         </div>
+        <div id="giua">
+        <div class="mySlides ">
+          <img src="https://cdn.mos.cms.futurecdn.net/UQdeKVPBXz77kCje7NjBii-1200-80.jpg" style="width: 800px; height: 450px;">
+        </div>
+        <div class="mySlides ">
+          <img src="https://www.indiewire.com/wp-content/uploads/2021/05/lol.png" style="width: 800px; height: 450px;">
+           </div>
+        <div class="mySlides ">
+          <img src="https://assets2.rockpapershotgun.com/lol-arcane-a.jpg/BROK/thumbnail/1600x900/quality/100/lol-arcane-a.jpg" style="width: 800px; height: 450px;">
+          </div>
+          </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>  
+      <script>
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 5000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
       </section>
       <div class="youtube">
        <iframe width="640" height="360" src="https://www.youtube.com/embed/32oT-CWJOC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -90,4 +141,5 @@ style="width:230px;height:310px;">
     </div>
     <!-- Wrapper Ends -->      
   </body>
+   
 </html>
