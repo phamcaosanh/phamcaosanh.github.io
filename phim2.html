@@ -75,8 +75,24 @@ style="width:230px;height:310px;">
           <h3>Nội Dung</h3>
          <p>Chủng tộc bất tử (tựa tiếng Anh: Eternals) là một bộ phim siêu anh hùng của Mỹ mới ra mắt trong năm 2021. Tác phẩm được dựa trên chủng loài Eternals của truyện tranh Marvel. Đây là phim thứ 26 của Vũ trụ Điện ảnh Marvel (MCU). Phim do Marvel Studios sản xuất, Walt Disney Studios Motion Pictures phân phối, Triệu Đình (Chloé Zhao) đạo diễn, Patrick Burleigh, Matthew K. Firpo và Ryan Firpo viết kịch bản cùng với sự tham gia của dàn diễn viên bao gồm: Angelina Jolie, Gemma Chan, Richard Madden, Kumail Nanjiani, Lauren Ridloff, Brian Tyree Henry, Salma Hayek, Lia McHugh, Don Lee, Barry Keoghan và Kit Harington,...</p>
         </div>
+        <div id="giua">
+        <div class="mySlides ">
+          <img src="https://w0.peakpx.com/wallpaper/396/839/HD-wallpaper-angelina-jolie-kit-harington-richard-madden-gemma-chan-ma-dong-seok-eternals.jpg" style="width: 800px; height: 450px;">
+        </div>
+        <div class="mySlides ">
+          <img src="https://nerdist.com/wp-content/uploads/2021/10/Eternals-Kingo-Solo.jpg" style="width: 800px; height: 450px;">
+           </div>
+        <div class="mySlides ">
+          <img src="https://cdn.mos.cms.futurecdn.net/bUQytpg2B4aSKwnpgaLjzd.png" style="width: 800px; height: 450px;">
+          </div>
+          </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>  
       </section>
-  
       <div class="youtube">
        <iframe width="640" height="360" src="https://www.youtube.com/embed/x_me3xsvDgk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
@@ -94,4 +110,38 @@ style="width:230px;height:310px;">
     </div>
     <!-- Wrapper Ends -->      
   </body>
+   <script>
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 5000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
 </html>
