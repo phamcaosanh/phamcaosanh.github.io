@@ -9,11 +9,39 @@
     <link href="p2022-2.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+     <header class="logo">
+            <div id="menu">
+                <img src="https://avatars.githubusercontent.com/u/72543595?v=4"/>
+            </div>
+   </header>
    <div class="wrapper">
       <!-- Navigation -->
       <nav class="main-nav">
         <ul>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/Cinema.html">Trang Chủ</a></li>
+          <li><a href="#">THỂ LOẠI</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li>
+                                <a href="#">PHIM 2021</a>   
+                            </li>
+                            <li>
+                                <a href="#">PHIM 2022</a>
+                            </li>
+                            <li>
+                                <a href="#">HÀNH ĐỘNGĐỘNG</a>   
+                            </li>
+                            <li>
+                                <a href="#">KINH DỊ</a>
+                            </li><li>
+                                <a href="#">VIỂN TƯỞNGTƯỞNG</a>   
+                            </li>
+                            <li>
+                                <a href="#">HÀI HƯỚC</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/baoloi.html">Báo Lỗi</a></li>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/lienhe.html">Liên Hệ</a></li>
         </ul>
@@ -45,10 +73,59 @@ style="width:230px;height:310px;">
           <h3>Nội Dung</h3>
          <p>Avatar 2 (còn được tiếp thị là James Cameron's Avatar 2) là phim điện ảnh Mỹ thuộc thể loại khoa học viễn tưởng và sử thi, dự kiến ra mắt năm 2022. Phim do James Cameron đạo diễn và hãng 20th Century Studios sản xuất. Đây sẽ là phim thứ hai trong loạt phim Avatar, sau phần một cùng tên năm 2009. Các diễn viên Sam Worthington, Zoe Saldana, Stephen Lang, Giovanni Ribisi, Joel David Moore, Dileep Rao, CCH Pounder và Matt Gerald đều sẽ trở lại với các vai cũ, trong khi Sigourney Weaver sẽ đảm nhận một vai diễn mới.Ngoài ra, các diễn viên mới trong phần này còn có Kate Winslet, Cliff Curtis, Edie Falco, Brendan Cowell, Dương Tử Quỳnh, Jemaine Clement, Oona Chaplin, Vin Diesel và CJ Jones.</p>
         </div>
+        <div id="giua">
+        <div class="mySlides ">
+          <img src="https://cdn.tgdd.vn/Files/2020/01/08/1230529/pandora_800x450.jpg" style="width: 800px; height: 450px;">
+        </div>
+        <div class="mySlides ">
+          <img src="https://cdn.tgdd.vn/Files/2020/01/08/1230529/enp7lbguyaisdl2_800x449.jpg" style="width: 800px; height: 450px;">
+           </div>
+        <div class="mySlides ">
+          <img src="https://cdn.tgdd.vn/Files/2020/01/08/1230529/enp7lbhvuaesn8v_800x441.jpg" style="width: 800px; height: 450px;">
+          </div>
+          </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>  
+      <script>
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 5000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
       </section>
-     <section class="video">
-       <h4>Trailer</h4>
-      <div class="youtube">
+        <div class="youtube">
        <iframe width="640" height="360" src="https://www.youtube.com/embed/AxLH0lXEGAY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
      </section>
