@@ -294,6 +294,23 @@ footer {
       'top-box-a top-box-b';
   }
   
+  
+    .boxes .mask{
+  display: none;
+  }
+.boxes .mask1{
+  display: none;
+  }
+.boxes .mask2{
+  display: none;
+  }
+.boxes .mask3{
+  display: none;
+  }
+.boxes .mask4{
+  display: none;
+  }
+
 
 
   .main-nav ul {
