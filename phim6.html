@@ -9,11 +9,40 @@
     <link href="phim6.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+   <header class="logo">
+            <div id="menu">
+                <img src="https://avatars.githubusercontent.com/u/72543595?v=4"/>
+            </div>
+   </header>
+   
    <div class="wrapper">
       <!-- Navigation -->
       <nav class="main-nav">
         <ul>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/Cinema.html">Trang Chủ</a></li>
+         <li><a href="#">THỂ LOẠI</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li>
+                                <a href="https://phamcaosanh.github.io/p2021.html">PHIM 2021</a>   
+                            </li>
+                            <li>
+                                <a href="https://phamcaosanh.github.io/p2022.html">PHIM 2022</a>
+                            </li>
+                            <li>
+                                <a href="https://phamcaosanh.github.io/phimhd.html">HÀNH ĐỘNG</a>   
+                            </li>
+                            <li>
+                                <a href="https://phamcaosanh.github.io/phimkd.html">KINH DỊ</a>
+                            </li><li>
+                                <a href="https://phamcaosanh.github.io/phimvt.html">VIỂN TƯỞNG</a>   
+                            </li>
+                            <li>
+                                <a href="#">HÀI HƯỚC</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/baoloi.html">Báo Lỗi</a></li>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/lienhe.html">Liên Hệ</a></li>
         </ul>
@@ -45,10 +74,59 @@ style="width:230px;height:310px;">
           <h3>Nội Dung</h3>
          <p>The Marvels (cũng được biết đến là Captain Marvel 2) là phim siêu anh hùng sắp ra mắt dựa theo nhân vật Carol Danvers|Captain Marvel của hãng truyện tranh Marvel Comics. Được sản xuất bởi Marvel Studios và được phân phối bởi Walt Disney Studios Motion Pictures, phim sẽ là hậu truyện của Đại uý Marvel (2019), là tác phẩm tiếp nối phim truyền hình Ms. Marvel (2021) của Disney+, và là phim thứ 31 của Vũ trụ Điện ảnh Marvel. Phim được đạo diễn bởi Nia DaCosta dựa theo kịch bản của Megan McDonnell, với dàn diễn viên bao gồm Brie Larson trong vai Carol Danvers|Captain Marvel, Iman Vellani trong vai Kamala Khan|Ms. Marvel và Teyonah Parris trong vai Monica Rambeau.</p>
         </div>
+        <div id="giua">
+        <div class="mySlides ">
+          <img src="https://photo-cms-nghenhinvietnam.zadn.vn/Uploaded/trunghieu/2021_11_27/maxresdefault_28__IHQB.jpg" style="width: 800px; height: 450px;">
+        </div>
+        <div class="mySlides ">
+          <img src="https://image.thanhnien.vn/w1024/Uploaded/2021/ygtmjz/2021_05_04/themarvels_tpuh.png" style="width: 800px; height: 450px;">
+           </div>
+        <div class="mySlides ">
+          <img src="https://static.mservice.io/blogscontents/momo-upload-api-210419145303-637544407836917198.jpeg" style="width: 800px; height: 450px;">
+          </div>
+          </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>  
+      <script>
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 5000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
       </section>
-     <section class="video">
-       <h4>Trailer</h4>
-      <div class="youtube">
+     <div class="youtube">
        <iframe width="640" height="360" src="https://www.youtube.com/embed/rXU_MoaQJVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
      </section>
