@@ -140,7 +140,7 @@ img:hover {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  transition: 0.7s ease;
+  transition: 0.2s ease;
 }
 
 .main-nav a:hover {
