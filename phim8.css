@@ -116,6 +116,7 @@ img {
 
 .main-nav a:hover {
   background: rgb(24, 74, 167);
+  transform: scale(1.13);
 }
 
 /* Footer */
@@ -314,7 +315,7 @@ h1 a{
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  transition: 0.7s ease;
+  transition: 0.2s ease;
 }
 
 /* Slideshow container */
