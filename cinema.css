@@ -102,7 +102,7 @@ body {
   }
 
 img {
-  
+  width:100%;
   display: block;
   transition: all .3s ease;
   
@@ -246,7 +246,7 @@ img:hover {
 .boxes {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20px, 2fr));
 }
 
 .boxes :hover {
@@ -347,7 +347,7 @@ img:hover {
 .portfolio {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 2fr);
 }
 
 .portfolio img {
@@ -410,8 +410,20 @@ footer {
       'top-box-a top-box-b';
   }
   
+.boxes .mask{
+  display: none;
+  }
+
+.portfolio .mask{
+  display: none;
+  }
+
+.portfolio .mask1{
+  display: none;
+  }
+
 .showcase h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .main-nav ul {
@@ -419,9 +431,13 @@ footer {
   }
 
   .boxes {
-    grid-template-columna: 1fr;
+    grid-template-columns: 1fr;
   }
   
+  .portfolio {
+     grid-template-columns: 1fr; 
+  }
+
   .info {
     grid-template-columns: 1fr;
   }
@@ -433,7 +449,9 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+
+
+@media (max-width: 300px) {
   .top-container {
     grid-template-areas:
       'showcase'
@@ -499,3 +517,4 @@ footer {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
