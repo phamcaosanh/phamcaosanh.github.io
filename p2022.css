@@ -140,12 +140,12 @@ img:hover {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  transition: 0.2s ease;
+  transition: 0.7s ease;
 }
 
 .main-nav a:hover {
   background: rgb(24, 74, 167);
-   transform: scale(1.13);
+  transform: scale(1.13);
 }
 
 
@@ -157,7 +157,7 @@ h1  {
    height: 30px;
    text-align: center;
    font-weight: 800;
-   background: -webkit-linear-gradient(45deg, #e3d800, #ff2200 80%);
+   background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
 }
@@ -166,29 +166,115 @@ h1  {
 .boxes {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(5, minmax(20px, 1fr));
-  width: 100%;
+  grid-template-columns: repeat(4, minmax(20px, 1fr));
+  
   
 }
 .boxes :hover{
-   background: -webkit-linear-gradient(to right, #140158, #35004e); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #140158, #35004e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   overflow: hidden;
   transition: 0.2s ease;
 }
 
 .box {
-  background: black;
-  text-align: center;
-  padding: 0.4rem 0.8rem;
+  background: rgb(5, 1, 29);
+  border-radius: 0px 0px 10px 10px;
+  padding: 4rem 0rem;
   box-shadow: var(--shadow);
+  margin: auto;
+  padding-top: 0;
 }
-.box p {
-  color: lightyellow;
-  font-size: 1rem;
+.box a {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
   font-style: italic;
   font-weight: bold;
+  position: absolute;
   }
 
+.box a:hover{
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.box img {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.boxes .mask{
+    position: absolute;
+    bottom: -135px;
+    height: 90px;
+    width: 235px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
+.boxes .mask:hover{
+    border-radius: 10px;
+    height: 500px;
+    background: rgba(0,0,0,0.5)
+}
+
+.boxes .mask1{
+    position: absolute;
+    bottom: -650px;
+    height: 90px;
+    width: 235px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
+.boxes .mask1:hover{
+    border-radius: 10px;
+    height: 500px;
+    background: rgba(0,0,0,0.5)
+}
+
+.boxes .mask2{
+    position: absolute;
+    bottom: -1165px;
+    height: 90px;
+    width: 235px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
+.boxes .mask2:hover{
+    border-radius: 10px;
+    height: 500px;
+    background: rgba(0,0,0,0.5)
+}
+
+.boxes .mask3{
+    position: absolute;
+    bottom: -1680px;
+    height: 90px;
+    width: 235px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
+.boxes .mask3:hover{
+    border-radius: 10px;
+    height: 500px;
+    background: rgba(0,0,0,0.5)
+}
+
+.boxes .mask4{
+    position: absolute;
+    bottom: -2195px;
+    height: 90px;
+    width: 235px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
+.boxes .mask4:hover{
+    border-radius: 10px;
+    height: 500px;
+    background: rgba(0,0,0,0.5)
+}
 
 /* Footer */
 footer {
@@ -263,6 +349,7 @@ footer {
 h2 {
   text-align: center;
 }
+
 .p2022 {
   border: solid;
   border-radius: 6px;
