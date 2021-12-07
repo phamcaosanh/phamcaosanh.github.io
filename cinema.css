@@ -103,6 +103,12 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
+  transition: all .3s ease;
+}
+
+img:hover {
+  transform: scale(1.2);
 }
 
 .wrapper {
