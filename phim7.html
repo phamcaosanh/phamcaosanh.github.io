@@ -9,11 +9,40 @@
     <link href="phim7.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+   <header class="logo">
+            <div id="menu">
+                <img src="https://avatars.githubusercontent.com/u/72543595?v=4"/>
+            </div>
+   </header>
+   
    <div class="wrapper">
       <!-- Navigation -->
       <nav class="main-nav">
         <ul>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/Cinema.html">Trang Chủ</a></li>
+         <li><a href="#">THỂ LOẠI</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li>
+                                <a href="https://phamcaosanh.github.io/p2021.html">PHIM 2021</a>   
+                            </li>
+                            <li>
+                                <a href="https://phamcaosanh.github.io/p2022.html">PHIM 2022</a>
+                            </li>
+                            <li>
+                                <a href="https://phamcaosanh.github.io/phimhd.html">HÀNH ĐỘNG</a>   
+                            </li>
+                            <li>
+                                <a href="https://phamcaosanh.github.io/phimkd.html">KINH DỊ</a>
+                            </li><li>
+                                <a href="https://phamcaosanh.github.io/phimvt.html">VIỂN TƯỞNG</a>   
+                            </li>
+                            <li>
+                                <a href="#">HÀI HƯỚC</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/baoloi.html">Báo Lỗi</a></li>
           <li><a style="text-decoration: none" href="https://phamcaosanh.github.io/lienhe.html">Liên Hệ</a></li>
         </ul>
@@ -27,7 +56,7 @@
       <!-- Top Container-->
       <section class="top-container">
       </section>
-      <h1 class="fas fa-film"><a href="https://phamcaosanh.github.io/Cinema.html"> Trang Chủ</a>》》<a href="https://phamcaosanh.github.io/phim7.html">THOR: LOVE AND THUNDER</a></h1>
+        <h1 class="fas fa-film"><a href="https://phamcaosanh.github.io/Cinema.html"> Trang Chủ</a>》》<a href="https://phamcaosanh.github.io/phim7.html">THOR: LOVE AND THUNDER</a></h1>
       <!-- Boxes Section -->
       <section class="boxes">
         <div class="box">
@@ -45,10 +74,59 @@ style="width:230px;height:310px;">
           <h3>Nội Dung</h3>
          <p>Thor: Love and Thunder (tạm dịch: Thor: Tình yêu và Sấm sét) là phim điện ảnh Mỹ thuộc thể loại siêu anh hùng, dựa trên nhân vật cùng tên của sê-ri truyện tranh Marvel. Đây là phần tiếp theo của Thor: Ragnarok (2017), cũng sẽ là phim thứ 29 trong vũ trụ Điện ảnh Marvel (MCU). Phim do Marvel Studios sản xuất và dự kiến được hãng Walt Disney phát hành vào năm 2022. Đạo diễn phim là Taika Waititi cùng với biên kịch Jennifer Kaytin Robinson. Các diễn viên trong phim là Chris Hemsworth (vai Thor), Tessa Thompson, Natalie Portman, Christian Bale, Chris Pratt, Jaimie Alexander, Pom Klementieff, Dave Bautista, and Karen Gillan.</p>
         </div>
+        <div id="giua">
+        <div class="mySlides ">
+          <img src="https://kenh14cdn.com/203336854389633024/2021/6/2/thor-love-and-thunder-16226049194601822626403.jpeg" style="width: 800px; height: 450px;">
+        </div>
+        <div class="mySlides ">
+          <img src="https://static.mservice.io/blogscontents/momo-upload-api-210419164756-637544476760164339.jpeg" style="width: 800px; height: 450px;">
+           </div>
+        <div class="mySlides ">
+          <img src="https://www.fortementein.com/wp-content/uploads/2021/07/thor-love-and-thunder-01.jpg" style="width: 800px; height: 450px;">
+          </div>
+          </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>  
+      <script>
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 5000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
       </section>
-     <section class="video">
-       <h4>Trailer</h4>
-      <div class="youtube">
+    <div class="youtube">
        <iframe width="640" height="360" src="https://www.youtube.com/embed/mqKAhsp-QqQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
      </section>
@@ -58,6 +136,7 @@ style="width:230px;height:310px;">
      <section class="p2022">
       <h2>Xem Danh Sách Phim 2022<a class="button" href="https://phamcaosanh.github.io/p2022.html"><span class="btn3">Tại đây</span></a></h2>
     </section>
+    
       <!-- Footer -->
 <footer>
   <p>Cinema &copy; 2021</p>
