@@ -117,6 +117,7 @@ img {
 
 .main-nav a:hover {
   background: rgb(24, 74, 167);
+   transform: scale(1.13);
 }
 
 /* Footer */
