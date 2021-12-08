@@ -84,7 +84,6 @@ body {
 }
 
 .btn {
-  background: #01082c;
   color: white;
   padding: 0.6rem 1.3rem;
   text-decoration: none;
@@ -96,6 +95,38 @@ body {
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
+.btn {
+ background: linear-gradient(270deg, #00315f, #34005d, #0e005c, #654cea, #5f004b);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    -o-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
 .bt0 {
   color: white;
   font-weight: bold;
@@ -150,9 +181,16 @@ img:hover {
 }
 
 .main-nav a:hover {
-  background: rgb(24, 74, 167);
   transform: scale(1.13);
+    background: linear-gradient(270deg, #9d0090, #34005d, #0e005c, #654cea, #5f004b);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    -o-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
 }
+
 
 .showcase a:hover {
   background: rgb(24, 74, 167);
@@ -182,7 +220,7 @@ img:hover {
 }
 
 .showcase {
-  background: linear-gradient(-45deg, #00106b, #5f0068, #3100a5, #14ee00 );
+  background: linear-gradient(-45deg, #00106b, #5f0068, #3100a5, #00eeff );
   background-size: 300% 300%;
   animation: gradient 10s ease infinite;
   height: 50vh;
@@ -358,12 +396,14 @@ img:hover {
 }
 
 .portfolio :hover {
-  background: -webkit-linear-gradient(to right, #140158, #35004e); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #140158, #35004e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   transition: 0.2s ease;
   overflow: hidden;
+
 }
-  
+ 
+
+
 .portfolio .mask{
     position: absolute;
     bottom: -1345px;
@@ -488,7 +528,7 @@ footer {
 }
 
 .info {
-    background: linear-gradient(270deg, #9d0090, #34005d, #0e005c, #654cea, #5f004b);
+    background: linear-gradient(270deg, #44003e, #5f0096, #0e005c, #0c0052, #3f0172);
     background-size: 1000% 1000%;
 
     -webkit-animation: AnimationName 9s ease infinite;
